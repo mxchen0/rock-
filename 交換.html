@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script>
+	window.onload = function() {
+		var oBtn = document.getElementById('btn')
+		var aIpt = document.getElementsByTagName('input')
+
+		oBtn.onclick = function() {
+			var tmp = aIpt[0].value
+
+			aIpt[0].value = aIpt[1].value
+			aIpt[1].value = tmp
+
+		}
+	}
+</script>
+<body>
+	<input>
+	<input>
+	<button id="btn">交換</button>
+</body>
+</html>
